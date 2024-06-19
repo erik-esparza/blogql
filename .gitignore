@@ -1,0 +1,11 @@
+# Node modules
+node_modules/
+
+# Build output
+dist/
+
+# .next directory
+.next/
+
+# Old repo path
+/next-app/blog-ql/blogql

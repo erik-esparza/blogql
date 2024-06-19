@@ -1,0 +1,72 @@
+/* globals.css */
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --foreground-rgb: 0, 0, 0;
+  --background-start-rgb: 255, 255, 255;
+  --background-end-rgb: 255, 255, 255;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --foreground-rgb: 0, 0, 0;
+    --background-start-rgb: 0, 0, 0;
+    --background-end-rgb: 0, 0, 0;
+  }
+}
+
+body {
+  color: rgb(var(--foreground-rgb));
+  background: rgb(var(--background-end-rgb));
+}
+
+@layer utilities {
+  .text-balance {
+    text-wrap: balance;
+  }
+
+  .hover-effect {
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+  }
+
+  .hover-effect:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  }
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  margin: 0;
+  padding: 0;
+  overflow-x: hidden;
+}
+.gradient-background {
+  background: 
+    linear-gradient(to bottom, rgba(255, 255, 255, 0), rgba(255, 255, 255, 1)),
+    radial-gradient(circle at 10% 20%, rgba(0, 200, 255, 0.1), transparent), 
+    radial-gradient(circle at 80% 80%, rgba(0, 255, 150, 0.1), transparent), 
+    radial-gradient(circle at 50% 50%, rgba(150, 0, 255, 0.1), transparent);
+  min-height: 100vh;
+  width: 100vw;
+}
+
+.floating-widget {
+  position: fixed;
+  bottom: 10px;
+  left: 10px;
+  background-color: rgba(135, 206, 250, 0.5);
+  padding: 10px;
+  border-radius: 25px 25px 25px 0;
+  cursor: pointer;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.floating-widget:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+}
