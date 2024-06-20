@@ -245,8 +245,8 @@ export default function HomePage() {
             Join our Partner Program and earn a 20% lifetime commission on
             referred clients. Enjoy exclusive benefits like personalized partner
             management, access to exclusive content, and a spot in our Partner
-            Directory. Empower your clients with RevenueHunt's tools and watch
-            their businesses thrive.
+            Directory. Empower your clients with RevenueHunt&apos;s tools and
+            watch their businesses thrive.
           </p>
           <Link href="https://revenuehunt.com/partners" passHref>
             <div className="p-2 bg-blue-500 text-white rounded-lg text-lg cursor-pointer">
